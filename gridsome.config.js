@@ -35,6 +35,24 @@ module.exports = {
         publicPath: `/admin`
       }
     },
+    {
+      use: 'gridsome-plugin-pwa',
+      options: {
+        title: 'Gridsome',
+        startUrl: '/',
+        display: 'standalone',
+        statusBarStyle: 'default',
+        manifestPath: '/manifest.json',
+        serviceWorkerPath: 'service-worker.js',
+        cachedFileTypes: 'js,json,css,html,png,jpg,jpeg,svg',
+        shortName: 'Gridsome',
+        themeColor: '#444',
+        backgroundColor: '#ffffff',
+        icon: './src/favicon.png', // must be provided
+        msTileImage: '',
+        msTileColor: '#444'
+      }
+    },
   ],
 
   transformers: {
