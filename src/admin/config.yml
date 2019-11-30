@@ -1,0 +1,22 @@
+backend:
+  name: github
+  repo: tresko/gridsome-starter-blog-netlify-cms-example
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "date"}
+      - {label: "Published", name: "published", widget: "boolean", default: false}
+      - {label: "Canonical URL", name: "canonical_url", widget: "boolean", default: false}
+      - {label: "Tags", name: "tags", widget: "list", default: ["news"]}
+      - {label: "Cover image", name: "cover_image", widget: "image"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
