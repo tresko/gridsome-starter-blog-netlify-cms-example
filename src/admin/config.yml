@@ -1,6 +1,7 @@
 backend:
   name: github
   repo: tresko/gridsome-starter-blog-netlify-cms-example
+  site_id: gridsome-netflify-cms
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
